@@ -175,7 +175,7 @@
 // console.log(suma)
 
 
-//Ejercicio: 
+//Ejercicio:
 // realiza una playlist que sea una array de 5 canciones (que son objetos) las canciones deben tener nombre, banda (2 canciones tienen que ser de la misma banda), año, si es tu favorita(booleano)
 
 //en todas usar forof
@@ -183,3 +183,79 @@
 // consologuear todas las bandas (pero si hay una repetida no mostrarlas dos veces)
 // consologuar el nombre de tus canciones favoritas
 // consologuear un promedio de los años
+
+const playlist = [
+    {
+        nombre: "Pensar",
+        banda:"NTVG",
+        año:2015,
+        favorita: true
+    },
+    {
+        nombre: "Pila Pila",
+        banda: "pity Alvarez",
+        año:2000,
+        favorita: false
+    },
+    {
+        nombre: "La morocha",
+        banda:"La Bersuit",
+        año:2023,
+        favorita: false
+    },
+    {
+        nombre: "un pacto para vivir",
+        banda:"La Bersuit",
+        año:2010,
+        favorita: true
+    },
+    {
+        nombre: "Argentinidad al palo",
+        banda:"La Bersuit",
+        año:2007,
+        favorita:true
+    }
+]
+//primer console.log
+// let nombreCanciones = []
+// for (const nombres of playlist) {
+//     nombreCanciones.push(nombres.nombre)
+// }
+// console.log(nombreCanciones)
+
+//segundo console.log (ESTA RESUELTO SOLO CON LOS CONTENIDOS VISTOS HASTA EL MOMENTo)
+
+let bandas = []
+for (const nombreBandas of playlist) {
+    if(nombreBandas.banda !== bandas[0] && nombreBandas.banda !== bandas[1] && nombreBandas.banda !== bandas[2] && nombreBandas.banda !== bandas[3]){
+        bandas.push(nombreBandas.banda)
+    }
+    
+}
+console.log(bandas)
+
+
+
+
+
+
+//tercer console.log
+
+
+// let esFavorita = []
+// for (const nombres of playlist) {
+//     if (nombres.favorita === true){
+//         esFavorita.push(nombres.nombre)
+//     }    
+// }
+// console.log(esFavorita)
+
+//cuarto console.log
+
+// let suma = 0
+
+// for (const cancion of playlist) {
+//     suma = suma + cancion.año
+// }
+// let promedio = suma / playlist.length
+// console.log(promedio)
